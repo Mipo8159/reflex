@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.button {
+		@apply inline-block text-xs font-bold text-center uppercase border rounded focus:outline-none;
+	}
+
+	.button.orange {
+		@apply text-white bg-orange-800 border-orange-800 hover:bg-orange-700 hover:border-orange-700 disabled:border-orange-300 disabled:bg-orange-300;
+	}
+
+	.button.orange.hollow {
+		@apply text-orange-800 bg-transparent border-orange-600;
+	}
+}
+
+@import 'loading.scss';
